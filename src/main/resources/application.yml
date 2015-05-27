@@ -1,0 +1,11 @@
+---
+# application.yml
+spring:
+  oauth2:
+    client:
+      clientId: client
+      clientSecret: secret
+      userAuthorizationUri: http://localhost:8080/demo/oauth/authorize
+      accessTokenUri: http://localhost:8080/demo/oauth/token
+    resource:
+      tokenInfoUri: http://localhost:8080/demo/oauth/check_token   
