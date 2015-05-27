@@ -8,12 +8,12 @@ public class HelloController {
 
 	@RequestMapping("/unprotected")
 	public String unprotected() {
-		return "Should be unprotected";
+		return "Should be unprotected, no sign-in needed";
 	}
 
 	@RequestMapping("/protected")
 	public String yesProtected() {
-		return "should be protected by OAuth2";
+		return "In order to see this, you should have had to authenticate via an OAuth2 Authorization Server";
 	}
 
 }
